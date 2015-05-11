@@ -1,6 +1,6 @@
 set(BOOSTSYSTEM_LIBRARIES boostsystem)
 
-add_library(${BOOSTSYSTEM_LIBRARIES}
+add_library(${BOOSTSYSTEM_LIBRARIES} STATIC
     src/error_code.cpp)
 
 target_include_directories(${BOOSTSYSTEM_LIBRARIES} PRIVATE
