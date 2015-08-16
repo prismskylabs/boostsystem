@@ -1,10 +1,10 @@
 set(BOOSTSYSTEM_LIBRARIES boostsystem)
 
+include_directories(
+    ${BOOST_INCLUDE_DIRS})
+
 add_library(${BOOSTSYSTEM_LIBRARIES} STATIC
     src/error_code.cpp)
-
-target_include_directories(${BOOSTSYSTEM_LIBRARIES} PRIVATE
-    ${BOOST_INCLUDE_DIRS})
 
 set(BOOSTSYSTEM_FOUND TRUE PARENT_SCOPE)
 set(BOOSTSYSTEM_INCLUDE_DIRS ${BOOST_INCLUDE_DIRS} PARENT_SCOPE)
